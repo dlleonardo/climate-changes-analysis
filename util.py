@@ -34,7 +34,7 @@ def get_json_data(url, latitude, longitude, start_date, end_date):
 def convert_to_datetime(strTime):
     return pd.to_datetime(strTime, format='%Y-%m-%dT%H:%M:%S')
 
-# Given the Dataframe of Precipitation and a string representing the season
+# Given the Dataframe of Precipitation and a string representing the season, calculates the mean precipitation for each year of the given season
 def calculate_mean_prec_season(dfPrec, season):
     season = season.lower()
     
