@@ -38,7 +38,7 @@ class DatabaseConnector:
             cursor = self.connection.cursor()
 
             # Create the SQL query for selecting the ID
-            table = '"City"'
+            table = '"city"'
             query = f"SELECT id FROM {table} WHERE city_name LIKE '%{city_name}%'"
 
             # Execute the select query
